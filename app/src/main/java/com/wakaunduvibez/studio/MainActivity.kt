@@ -22,11 +22,15 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         val layout = LinearLayout(this).apply {
-            orientation = LinearLayout.VERTICAL
-            gravity = Gravity.CENTER
-            setPadding(32, 32, 32, 32)
-            setBackgroundColor(Color.rgb(18, 18, 30))
-        }
+    orientation = LinearLayout.VERTICAL
+    gravity = Gravity.CENTER
+    setPadding(24, 24, 24, 24)
+    setBackgroundColor(Color.rgb(18, 18, 30))
+    layoutParams = LinearLayout.LayoutParams(
+        LinearLayout.LayoutParams.MATCH_PARENT,
+        LinearLayout.LayoutParams.MATCH_PARENT
+    )
+}
 
         val title = TextView(this).apply {
             text = "WakaûndūVibez Studio"
